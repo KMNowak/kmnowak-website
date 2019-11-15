@@ -1,0 +1,33 @@
+@import "../variables/color"
+@import "../variables/mixins"
+
+.fixed-nav
+  align-items: center
+  display: flex
+  height: 5vh
+  justify-content: space-between
+  padding: 1vh
+  z-index: 2
+
+  &__logo
+    align-items: center
+    display: flex
+    justify-content: center
+    max-width: 100%
+    max-height: 100%
+
+  &__list
+    align-items: center
+    display: flex
+    min-width: 40vw
+    justify-content: space-around
+
+    +for-phone-only
+      display: none
+
+  &__item
+    color: $color-red
+    cursor: pointer
+    font-size: 20px
+    font-weight: 400
+    padding: 10px
