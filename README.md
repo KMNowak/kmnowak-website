@@ -1,6 +1,6 @@
-# Codegate landing page
+# kmnowak landing page
 
-Landing page for codegate.
+Website of kmnowak
 
 
 ### Installation
