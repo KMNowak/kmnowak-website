@@ -2,32 +2,31 @@
 @import "../variables/mixins"
 
 .fixed-nav
-  align-items: center
-  display: flex
-  height: 5vh
-  justify-content: space-between
-  padding: 1vh
+  background-color: $color-white
+  position: fixed
+  width: 100vw
   z-index: 2
 
-  &__logo
+  &__content
     align-items: center
     display: flex
-    justify-content: center
-    max-width: 100%
-    max-height: 100%
+    height: 60px
+    justify-content: space-between
+    padding: 1vh
 
   &__list
     align-items: center
     display: flex
-    min-width: 40vw
+    min-width: 30vw
     justify-content: space-around
 
     +for-phone-only
       display: none
 
   &__item
-    color: $color-red
+    color: $color-typography
     cursor: pointer
     font-size: 20px
     font-weight: 400
     padding: 10px
+
