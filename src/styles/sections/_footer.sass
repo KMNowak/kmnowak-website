@@ -1,12 +1,10 @@
 @import "../variables/color"
 @import "../variables/mixins"
 
-.fixed-nav
-  background-color: $color-white
-  position: fixed
+.footer
+  background-color: $color-primary
   width: 100vw
   z-index: 2
-  @include select-none
 
   &__content
     align-items: center
@@ -19,15 +17,15 @@
     align-items: center
     display: flex
     min-width: 40vw
-    justify-content: space-around
-
-    +for-phone-only
-      display: none
+    justify-content: flex-start
 
   &__item
-    color: $color-typography
+    color: $color-white
     cursor: pointer
-    font-size: 20px
-    font-weight: 400
-    padding: 10px
+    margin-left: 40px
 
+  &__text
+    color: $color-white
+    font-size: 12px
+    padding: 10px
+    @include select-none
