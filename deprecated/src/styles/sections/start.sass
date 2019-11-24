@@ -1,0 +1,53 @@
+@import "../variables/color"
+@import "../variables/mixins"
+
+.start
+  background: rgb(77, 60, 245)
+  background: linear-gradient(120deg, rgba(77, 60, 245, 1) 14%, rgba(92, 193, 249, 1) 73%, rgba(144, 255, 144, 1) 100%)
+  height: 100vh
+  z-index: 1
+
+  &__content
+    align-items: flex-start
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding-top: 60px
+    padding-left: 20px
+    height: 80vh
+
+  &__name
+    color: $color-white
+    font-size: 7em
+    padding-top: 15vh
+    @include select-none
+
+  &__soft-dev
+    color: $color-white
+    font-size: 3em
+    @include select-none
+
+  &__buttons-div
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    @include select-none
+
+  &__button
+    align-items: center
+    border-radius: 45px
+    color: $color-white
+    display: flex
+    justify-content: center
+    font-size: 1em
+    margin-left: 20px
+    height: 45px
+    width: 200px
+    cursor: pointer
+    @include shadow-light
+
+    &--blue
+      background-color: $color-primary
+
+    &--green
+      background-color: $color-secondary
