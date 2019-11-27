@@ -1,1 +1,5 @@
-export * from './skill'
+import * as skillStyles from './skill'
+
+export {
+    skillStyles
+}
