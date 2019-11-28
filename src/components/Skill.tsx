@@ -7,19 +7,19 @@ type SkillProps = {
     fillPercent: number
 }
 
-export const Skill: FC<SkillProps> = ({ fillPercent }) => (
+export const Skill: FC<SkillProps> = ({ fillPercent, skillLvl, skillName }) => (
     <div style={skillStyles.skill}>
         <div style={skillStyles.textSection}>
             <div style={skillStyles.textSkillName}>
-                Title
+                {skillName}
             </div>
             <div style={skillStyles.textSkillLvl}>
-                lvl
+                {skillLvl}
             </div>
         </div>
         <div style={skillStyles.progressBarSection}>
             <div style={skillStyles.progressBarBar}>
-                <div style={skillStyles.progressBarFill(90)}>
+                <div style={skillStyles.progressBarFill(fillPercent)}>
                 </div>
             </div>
         </div>

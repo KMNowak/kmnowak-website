@@ -1,12 +1,15 @@
 import { COLORS } from 'styles'
 import { createStyle } from 'lib/utils'
+import { shadowLight } from 'lib/styles'
 
 export const skill = createStyle({
+    ...shadowLight,
     alignItems: 'center',
     borderRadius: '10px',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    height: '50px',
+    justifyContent: 'space-around',
     padding: '10px 15px 10px 10px',
     width: '300px'
 })
