@@ -1,26 +1,28 @@
 import React from 'react'
+import { container } from 'lib/styles'
+import { footer } from './styles'
 import { stackOverflowIcon, gitHubIcon, linkedInIcon } from '../assets'
 
 export const Footer: React.FC = () => (
-    <section id="footer" className="footer">
-        <div className="container">
-            <div className="footer__content">
-                <div className="footer__list">
-                    <a href="https://www.linkedin.com/in/kmnowak" className="footer__item">
+    <section style={footer.footer}>
+        <div style={container}>
+            <div style={footer.footerContent}>
+                <div style={footer.footerList}>
+                    <a href="https://www.linkedin.com/in/kmnowak" style={footer.footerItem}>
                         <img
                             src={linkedInIcon}
                             alt="LinkedId kmnowak"
                             height="30px"
                         />
                     </a>
-                    <a href="https://github.com/kmnowak" className="footer__item">
+                    <a href="https://github.com/kmnowak" style={footer.footerItem}>
                         <img
                             src={gitHubIcon}
                             alt="Github kmnowak"
                             height="30px"
                         />
                     </a>
-                    <a href="https://stackoverflow.com/users/8240531/kmnowak" className="footer__item">
+                    <a href="https://stackoverflow.com/users/8240531/kmnowak" style={footer.footerItem}>
                         <img
                             src={stackOverflowIcon}
                             alt="StackOverflow kmnowak"
@@ -28,7 +30,7 @@ export const Footer: React.FC = () => (
                         />
                     </a>
                 </div>
-                <div className="footer__text">
+                <div style={footer.footerText}>
                     Copyright Krzysztof Nowak 2019<br />
                     All rights reserved
                 </div>

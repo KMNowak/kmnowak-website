@@ -1,10 +1,13 @@
 import React from 'react'
+import { container } from 'lib/styles'
+import { facePhoto } from 'assets'
+import { about } from './styles'
 
 export const About: React.FC = () => (
-    <section id="about" className="about">
-        <div className="container">
-            <div className="about__content">
-                <div className="about__text">
+    <section style={about.about}>
+        <div style={container}>
+            <div style={about.aboutContent}>
+                <div style={about.aboutText}>
                     <h3>
                         Doggo ipsum tungg such treat heckin very taste wow clouds hemade many woofs,
                         fat boi adorable doggo borkdrive. Smol borking doggo with a long snoot for
@@ -12,8 +15,8 @@ export const About: React.FC = () => (
                         pats borkdrive shoober, wow diet, very hand that feed shibe lotsa pats borkdrive shoober,
                     </h3>
                 </div>
-                <div className="about__photo">
-                    {/*<img src="../assets/face-photo.png" alt="Krzysztof Nowak" height="200px" />*/}
+                <div style={about.aboutPhoto}>
+                    <img src={facePhoto} alt="Krzysztof Nowak photo" height="200px" />
                 </div>
             </div>
         </div>
