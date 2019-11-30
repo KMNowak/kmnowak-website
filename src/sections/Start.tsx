@@ -1,23 +1,25 @@
 import React from 'react'
+import { container } from 'lib/styles'
+import { start } from './styles'
 
 export const Start: React.FC = () => (
-    <section id="start" className="start">
-        <div className="container">
-            <div className="start__content">
-                <h1 className="start__name">
+    <section style={start.start}>
+        <div style={container}>
+            <div style={start.startContent}>
+                <h1 style={start.startName}>
                     Krzysztof Nowak
                 </h1>
-                <h2 className="start__soft-dev">
+                <h2 style={start.startSoftDev}>
                     software developer
                 </h2>
-                <div className="start__buttons-div">
+                <div style={start.startButtonsDiv}>
                     <div
-                        className="start__button start__button--green"
+                        style={start.startButtonGreen}
                     >
                         <b>About</b>
                     </div>
                     <div
-                        className="start__button start__button--blue"
+                        style={start.startButtonBlue}
                     >
                         <b>Contact</b>
                     </div>

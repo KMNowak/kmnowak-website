@@ -3,7 +3,7 @@ export const BLACK = '#000000'
 export const BLACK_LIGHTER = '#23313e'
 
 export const PRIMARY = '#424AF7'
-export const SECONDARY = '#84FA96'
+export const SECONDARY = '#38ED54'
 
 export const TYPOGRPHY = '#545F7C'
 

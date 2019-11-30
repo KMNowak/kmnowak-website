@@ -1,6 +1,5 @@
-import { COLORS } from 'styles'
 import { createStyle } from 'lib/utils'
-import { shadowLight } from 'lib/styles'
+import { shadowLight, COLORS } from 'lib/styles'
 
 export const skill = createStyle({
     ...shadowLight,
