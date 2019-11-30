@@ -1,3 +1,4 @@
+export * from './FixedNav'
 export * from './Start'
 export * from './About'
 export * from './Skills'
