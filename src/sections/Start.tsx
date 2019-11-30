@@ -14,12 +14,12 @@ export const Start: React.FC = () => (
                 </h2>
                 <div style={start.startButtonsDiv}>
                     <div
-                        style={start.startButtonGreen}
+                        style={start.startButtonBlue}
                     >
                         <b>About</b>
                     </div>
                     <div
-                        style={start.startButtonBlue}
+                        style={start.startButtonGreen}
                     >
                         <b>Contact</b>
                     </div>

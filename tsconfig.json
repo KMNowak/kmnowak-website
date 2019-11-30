@@ -19,7 +19,7 @@
     "noEmit": true,
     "jsx": "react",
     "isolatedModules": true,
-    "types": ["@emotion/core"]
+    "types": ["@emotion/core", "@types/jest"]
   },
   "include": [
     "src"
