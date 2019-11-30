@@ -9,8 +9,9 @@ export const skill = createStyle({
     flexDirection: 'column',
     height: '50px',
     justifyContent: 'space-around',
+    margin: '10px',
     padding: '10px 15px 10px 10px',
-    width: '300px'
+    width: '100%'
 })
 export const textSection = createStyle({
     alignItems: 'center',
