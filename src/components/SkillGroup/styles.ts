@@ -16,8 +16,6 @@ export const skillGroup = createStyle({
 
 export const skillGroupName = createStyle({
     color: COLORS.TYPOGRPHY,
-    fontSize: '16px',
-    fontWeight: 'bold',
     marginBottom: '20px',
 })
 

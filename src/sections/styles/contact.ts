@@ -7,15 +7,14 @@ export const contact = createStyle({
     color: COLORS.WHITE,
     display: 'flex',
     flexDirection: 'column',
-    fontSize: '25px',
     justifyContent: 'center',
-    height: '300px',
+    height: '250px',
     zIndex: 1
 })
 
 export const email = createStyle({
     fontWeight: 'bold',
     fontSize: '35px',
-    marginTop: '30px'
+    marginTop: '40px'
 })
 

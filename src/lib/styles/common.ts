@@ -13,3 +13,5 @@ export const selectNone = createStyle({
     KhtmlUserSelect: 'none',
     userSelect: 'none'
 })
+
+export const invisible = createStyle({ height: 0, visibility: 'hidden' })

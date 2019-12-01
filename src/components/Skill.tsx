@@ -10,9 +10,9 @@ type SkillProps = {
 export const Skill: FC<SkillProps> = ({ fillPercent, skillLvl, skillName }) => (
     <div style={skillStyles.skill}>
         <div style={skillStyles.textSection}>
-            <div style={skillStyles.textSkillName}>
+            <h4 style={skillStyles.textSkillName}>
                 {skillName}
-            </div>
+            </h4>
             <div style={skillStyles.textSkillLvl}>
                 {skillLvl}
             </div>

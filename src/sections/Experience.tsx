@@ -2,6 +2,7 @@ import React from 'react'
 import 'react-vertical-timeline-component/style.min.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { przLogo, skanerkaLogo, labmanLogo } from 'assets'
+import { invisible } from 'lib/styles'
 import { experience } from './styles'
 
 type ExperienceElementProps = {
@@ -9,7 +10,6 @@ type ExperienceElementProps = {
     company: string,
     content: string
 }
-
 
 const PrzLogo = () => (
     <div style={experience.img}>
@@ -41,12 +41,14 @@ const ExperienceElement: React.FC<ExperienceElementProps> = ({ content, title, c
 
 export const Experience: React.FC = () => (
     <section style={experience.experience}>
+        <h2 style={invisible}>Experience</h2>
         <VerticalTimeline>
             <VerticalTimelineElement
                 contentStyle={experience.experienceItemContent}
                 contentArrowStyle={experience.experienceItemArrow}
                 iconStyle={experience.experienceIcon}
                 icon={<SkanerkaLogo />}
+                date={'07.2017 - present'}
             >
                 <ExperienceElement
                     title={"JavaScript developer"}

@@ -1,13 +1,15 @@
 import React from 'react'
+import { invisible } from 'lib/styles'
 import { contact } from './styles'
 
 export const Contact: React.FC = () => (
     <section style={contact.contact}>
-        <div>
+        <h2 style={invisible}>Contact</h2>
+        <h4>
             {'Interested? Write to me:'}
-        </div>
-        <div style={contact.email}>
+        </h4>
+        <h3 style={contact.email}>
             {'contact@kmnowak.com'}
-        </div>
+        </h3>
     </section>
 )

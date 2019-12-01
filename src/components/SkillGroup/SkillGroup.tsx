@@ -16,9 +16,9 @@ export const SkillGroup: FC<Props> = ({ children, name, image, imgWidth, imgHeig
             imgWidth={imgWidth}
             imgHeight={imgHeight}
         />
-        <div style={skillGroupName}>
+        <h3 style={skillGroupName}>
             {name}
-        </div>
+        </h3>
         {children}
     </div>
 )
