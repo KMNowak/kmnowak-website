@@ -13,6 +13,7 @@ export const contact = createStyle({
 })
 
 export const email = createStyle({
+    color: COLORS.WHITE,
     fontWeight: 'bold',
     fontSize: '35px',
     marginTop: '40px'

@@ -9,20 +9,24 @@ export const FixedNav: React.FC = () => (
                 <div style={container}>
                     <div style={fixedNav.fixedNavContent}>
                         <div
-                            style={fixedNav.fixedNavItem}
+                            style={{
+                                ...fixedNav.fixedNavItem,
+                                fontWeight: 'bold'
+                            }}
                         >
                             kmnowak
                         </div>
                         <div style={fixedNav.fixedNavList}>
-                            <div
-                                style={fixedNav.fixedNavItem}
-                            >
+                            <div style={fixedNav.fixedNavItem}>
                                 Start
                             </div>
-                            <div  style={fixedNav.fixedNavItem}>
+                            <div style={fixedNav.fixedNavItem}>
                                 About
                             </div>
-                            <div  style={fixedNav.fixedNavItem}>
+                            <div style={fixedNav.fixedNavItem}>
+                                Experience
+                            </div>
+                            <div style={fixedNav.fixedNavItem}>
                                 Contact
                             </div>
                         </div>

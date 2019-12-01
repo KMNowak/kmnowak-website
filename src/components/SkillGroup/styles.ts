@@ -17,6 +17,7 @@ export const skillGroup = createStyle({
 export const skillGroupName = createStyle({
     color: COLORS.TYPOGRPHY,
     marginBottom: '20px',
+    marginTop: 0
 })
 
 export const skillGroupHeader = createStyle({
@@ -31,7 +32,7 @@ export const skillGroupHeader = createStyle({
     justifyContent: 'center',
     position: 'absolute',
     textAlign: 'justify',
-    top: '-50px',
+    top: '-35px',
     width: '60px',
     ...shadowLight
 })

@@ -21,7 +21,7 @@ export const fixedNavContent = createStyle({
 export const fixedNavList = createStyle({
     alignItems: 'center',
     display: 'flex',
-    minWidth: '40vw',
+    width: '500px',
     justifyContent: 'space-around'
 })
 
