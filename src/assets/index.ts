@@ -7,6 +7,9 @@ const bracketsIcon = require('./skillGroupIcons/brackets.png')
 const storageIcon = require('./skillGroupIcons/storage.png')
 const webIcon = require('./skillGroupIcons/web.png')
 
+const przLogo = require('./prz-logo.png')
+const skanerkaLogo = require('./skanerka-logo.png')
+
 export {
     linkedInIcon,
     gitHubIcon,
@@ -14,5 +17,7 @@ export {
     facePhoto,
     bracketsIcon,
     storageIcon,
-    webIcon
+    webIcon,
+    przLogo,
+    skanerkaLogo
 }

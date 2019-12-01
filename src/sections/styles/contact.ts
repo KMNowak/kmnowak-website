@@ -10,7 +10,7 @@ export const contact = createStyle({
     fontSize: '25px',
     justifyContent: 'center',
     height: '300px',
-    zIndex: 1,
+    zIndex: 1
 })
 
 export const email = createStyle({

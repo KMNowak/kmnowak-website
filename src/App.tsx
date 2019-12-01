@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import './styles/styles.sass'
-import { Start, About, Skills, Footer, FixedNav, Contact } from './sections'
+import { Start, About, Skills, Footer, FixedNav, Contact, Experience } from './sections'
 
 const App: React.FC = () => {
     return (
@@ -17,6 +17,7 @@ const App: React.FC = () => {
             <FixedNav />
             <Start />
             <About />
+            <Experience />
             <Skills />
             <Contact />
             <Footer />

@@ -3,6 +3,7 @@ import { shadowLight, COLORS } from 'lib/styles'
 
 export const skillGroup = createStyle({
     alignItems: 'center',
+    borderRadius: '5px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
