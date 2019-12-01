@@ -9,6 +9,7 @@ const webIcon = require('./skillGroupIcons/web.png')
 
 const przLogo = require('./prz-logo.png')
 const skanerkaLogo = require('./skanerka-logo.png')
+const labmanLogo = require('./labman-logo.png')
 
 export {
     linkedInIcon,
@@ -19,5 +20,6 @@ export {
     storageIcon,
     webIcon,
     przLogo,
-    skanerkaLogo
+    skanerkaLogo,
+    labmanLogo
 }

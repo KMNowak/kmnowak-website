@@ -29,11 +29,11 @@ export const skillGroupHeader = createStyle({
     display: 'flex',
     fontSize: '40px',
     fontWeight: 'bold',
+    height: '60px',
     justifyContent: 'center',
-    height: '70px',
-    top: '-50px',
-    width: '70px',
     position: 'absolute',
     textAlign: 'justify',
+    top: '-50px',
+    width: '60px',
     ...shadowLight
 })

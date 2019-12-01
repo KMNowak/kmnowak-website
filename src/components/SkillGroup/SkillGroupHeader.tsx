@@ -7,7 +7,7 @@ type SkillProps = {
     imgHeight?: number
 }
 
-export const SkillGroupHeader: FC<SkillProps> = ({ image, imgHeight = 50, imgWidth = 50 }) => (
+export const SkillGroupHeader: FC<SkillProps> = ({ image, imgHeight = 40, imgWidth = 40 }) => (
     <div style={skillGroupHeader}>
         <img src={image} alt={"Skill group icon"} height={`${imgHeight}px`} width={`${imgWidth}px`} />
     </div>

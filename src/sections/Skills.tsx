@@ -7,7 +7,7 @@ import { skills } from './styles'
 export const Skills: React.FC = () => (
     <section style={container}>
         <div style={skills.skills}>
-            <SkillGroup name={'Programming'} image={bracketsIcon} imgWidth={40} imgHeight={50}>
+            <SkillGroup name={'Programming'} image={bracketsIcon} imgWidth={35} imgHeight={45}>
                 <Skill fillPercent={65} skillLvl={'Advanced'} skillName={'JavaScript'} />
                 <Skill fillPercent={33} skillLvl={'Familiar'} skillName={'NestJS'} />
             </SkillGroup>
@@ -15,7 +15,7 @@ export const Skills: React.FC = () => (
                 <Skill fillPercent={65} skillLvl={'Advanced'} skillName={'JavaScript'} />
                 <Skill fillPercent={33} skillLvl={'Familiar'} skillName={'NestJS'} />
             </SkillGroup>
-            <SkillGroup name={'Frameworks'} image={webIcon} imgWidth={45} imgHeight={35}>
+            <SkillGroup name={'Frameworks'} image={webIcon} imgWidth={35} imgHeight={30}>
                 <Skill fillPercent={65} skillLvl={'Advanced'} skillName={'JavaScript'} />
                 <Skill fillPercent={33} skillLvl={'Familiar'} skillName={'NestJS'} />
             </SkillGroup>

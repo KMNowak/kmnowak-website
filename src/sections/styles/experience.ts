@@ -29,5 +29,6 @@ export const experienceItemArrow = createStyle({
 })
 
 export const experienceIcon = createStyle({
+    backgroundColor: COLORS.WHITE,
     ...shadowLight
 })

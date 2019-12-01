@@ -1,8 +1,15 @@
 import React from 'react'
 import 'react-vertical-timeline-component/style.min.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { przLogo, skanerkaLogo } from 'assets'
+import { przLogo, skanerkaLogo, labmanLogo } from 'assets'
 import { experience } from './styles'
+
+type ExperienceElementProps = {
+    title: string,
+    company: string,
+    content: string
+}
+
 
 const PrzLogo = () => (
     <div style={experience.img}>
@@ -16,11 +23,11 @@ const SkanerkaLogo = () => (
     </div>
 )
 
-type ExperienceElementProps = {
-    title: string,
-    company: string,
-    content: string
-}
+const LambanLogo = () => (
+    <div style={experience.img}>
+        <img src={labmanLogo} alt={'Labman logo'} style={experience.img} />
+    </div>
+)
 
 const ExperienceElement: React.FC<ExperienceElementProps> = ({ content, title, company }) => (
     <div>
@@ -56,6 +63,17 @@ export const Experience: React.FC = () => (
                 <ExperienceElement
                     title={"Graduated M.Sc."}
                     company={"Rzeszow University of Technology"}
+                    content={"Write donw what i Was doing there"}
+                />
+            </VerticalTimelineElement> <VerticalTimelineElement
+                contentStyle={experience.experienceItemContent}
+                contentArrowStyle={experience.experienceItemArrow}
+                iconStyle={experience.experienceIcon}
+                icon={<LambanLogo />}
+            >
+                <ExperienceElement
+                    title={"Software developer"}
+                    company={"Labman LTD"}
                     content={"Faculty: Computer Science"}
                 />
             </VerticalTimelineElement>
