@@ -1,8 +1,9 @@
 import { createStyle } from 'lib/utils'
-import { COLORS, selectNone, shadowLight } from 'lib/styles'
+import { COLORS, selectNone, shadowLight, FIXED_NAV_HEIGHT } from 'lib/styles'
 
 export const fixedNav = createStyle({
     backgroundColor: COLORS.WHITE,
+    height: `${FIXED_NAV_HEIGHT}px`,
     position: 'fixed',
     width: '100vw',
     zIndex: 2,

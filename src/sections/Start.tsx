@@ -1,9 +1,11 @@
 import React from 'react'
-import { container } from 'lib/styles'
+import { Element, Link } from 'react-scroll'
+import { container, FIXED_NAV_HEIGHT } from 'lib/styles'
 import { start } from './styles'
 
 export const Start: React.FC = () => (
     <section style={start.start}>
+        <Element name={'start'} />
         <div style={container}>
             <div style={start.startContent}>
                 <h1 style={start.startName}>
@@ -13,16 +15,28 @@ export const Start: React.FC = () => (
                     software developer
                 </h2>
                 <div style={start.startButtonsDiv}>
-                    <div
-                        style={start.startButtonBlue}
+                    <Link
+                        to={'about'}
+                        smooth={true}
+                        offset={-FIXED_NAV_HEIGHT}
                     >
-                        <b>About</b>
-                    </div>
-                    <div
-                        style={start.startButtonGreen}
+                        <div
+                            style={start.startButtonBlue}
+                        >
+                            <b>About</b>
+                        </div>
+                    </Link>
+                    <Link
+                        to={'contact'}
+                        smooth={true}
+                        offset={-FIXED_NAV_HEIGHT}
                     >
-                        <b>Contact</b>
-                    </div>
+                        <div
+                            style={start.startButtonGreen}
+                        >
+                            <b>Contact</b>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

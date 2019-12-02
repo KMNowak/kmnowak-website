@@ -1,11 +1,13 @@
 import React from 'react'
 import { container, invisible } from 'lib/styles'
 import { facePhoto } from 'assets'
+import { Element } from 'react-scroll'
 import { about } from './styles'
 
 export const About: React.FC = () => (
     <section style={about.about}>
         <div style={container}>
+            <Element name={'about'} />
             <h2 style={invisible}>About</h2>
             <div style={about.aboutContent}>
                 <h4 style={about.aboutText}>

@@ -2,6 +2,7 @@ import React from 'react'
 import 'react-vertical-timeline-component/style.min.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { przLogo, skanerkaLogo, labmanLogo } from 'assets'
+import { Element } from 'react-scroll'
 import { invisible } from 'lib/styles'
 import { experience } from './styles'
 
@@ -41,6 +42,7 @@ const ExperienceElement: React.FC<ExperienceElementProps> = ({ content, title, c
 
 export const Experience: React.FC = () => (
     <section style={experience.experience}>
+        <Element name={'experience'} />
         <h2 style={invisible}>Experience</h2>
         <VerticalTimeline>
             <VerticalTimelineElement
