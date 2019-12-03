@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import Radium from 'radium'
 import './styles/styles.sass'
 import { Start, About, Skills, Footer, FixedNav, Contact, Experience } from './sections'
 
@@ -25,4 +26,4 @@ const App: React.FC = () => {
     )
 }
 
-export default App
+export default Radium(App)

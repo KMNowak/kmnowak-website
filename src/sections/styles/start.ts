@@ -1,5 +1,5 @@
 import { createStyle } from 'lib/utils'
-import { COLORS, selectNone, shadowLight } from 'lib/styles'
+import { COLORS, selectNone, shadowLight, Media } from 'lib/styles'
 
 export const start = createStyle({
     background: 'rgb(77, 60, 245)',
@@ -23,19 +23,27 @@ export const startName = createStyle({
     ...selectNone,
     color: COLORS.WHITE,
     fontSize: '7em',
-    paddingTop: '15vh'
+    paddingTop: '15vh',
+    [Media.phone]: {
+        fontSize: '4em'
+    }
 })
 
 export const startSoftDev = createStyle({
     color: COLORS.WHITE,
     fontSize: '3em',
-    ...selectNone
+    marginBottom: '10px',
+    ...selectNone,
+    [Media.phone]: {
+        fontSize: '2em'
+    }
 })
 
 export const startButtonsDiv = createStyle({
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'flext-start',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-start',
     ...selectNone
 })
 
@@ -46,7 +54,7 @@ const startButton = createStyle({
     display: 'flex',
     justifyContent: 'center',
     fontSize: '1em',
-    marginLeft: '20px',
+    margin: '5px',
     height: '45px',
     width: '200px',
     cursor: 'pointer',

@@ -1,10 +1,11 @@
 import React from 'react'
 import { container, invisible } from 'lib/styles'
 import { facePhoto } from 'assets'
+import Radium from 'radium'
 import { Element } from 'react-scroll'
 import { about } from './styles'
 
-export const About: React.FC = () => (
+const AboutSection: React.FC = () => (
     <section style={about.about}>
         <div style={container}>
             <Element name={'about'} />
@@ -17,9 +18,11 @@ export const About: React.FC = () => (
                     pats borkdrive shoober, wow diet, very hand that feed shibe lotsa pats borkdrive shoober,
                 </h4>
                 <div style={about.aboutPhoto}>
-                    <img src={facePhoto} alt="Krzysztof Nowak photo" height="200px" />
+                    <img src={facePhoto} alt="Krzysztof Nowak photo" height="100%" />
                 </div>
             </div>
         </div>
     </section>
 )
+
+export const About = Radium(AboutSection)

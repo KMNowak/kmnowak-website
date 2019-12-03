@@ -1,5 +1,5 @@
 import { createStyle } from 'lib/utils'
-import { COLORS, selectNone } from 'lib/styles'
+import { COLORS, selectNone, Media } from 'lib/styles'
 
 export const footer = createStyle({
     backgroundColor: COLORS.PRIMARY,
@@ -10,22 +10,25 @@ export const footer = createStyle({
 export const footerContent = createStyle({
     alignItems: 'center',
     display: 'flex',
-    height: '60px',
+    minHeight: '60px',
     justifyContent: 'space-between',
-    padding: '1vh'
+    flexWrap: 'wrap',
+    padding: '1vh',
+    [Media.phone]: {
+        justifyContent: 'center'
+    }
 })
 
 export const footerList = createStyle({
     alignItems: 'center',
     display: 'flex',
-    minWidth: '40vw',
-    justifyContent: 'flex-start'
+    minWidth: '300px',
+    justifyContent: 'space-around'
 })
 
 export const footerItem = createStyle({
     color: COLORS.WHITE,
     cursor: 'pointer',
-    marginLeft: '40px'
 })
 
 export const footerText = createStyle({

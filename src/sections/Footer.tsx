@@ -1,9 +1,10 @@
 import React from 'react'
+import Radium from 'radium'
 import { container } from 'lib/styles'
 import { footer } from './styles'
 import { stackOverflowIcon, gitHubIcon, linkedInIcon } from '../assets'
 
-export const Footer: React.FC = () => (
+const FooterSection: React.FC = () => (
     <section style={footer.footer}>
         <div style={container}>
             <div style={footer.footerContent}>
@@ -38,3 +39,5 @@ export const Footer: React.FC = () => (
         </div>
     </section>
 )
+
+export const Footer = Radium(FooterSection)

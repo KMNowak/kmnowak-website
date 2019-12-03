@@ -1,9 +1,10 @@
 import React from 'react'
 import { Element, Link } from 'react-scroll'
+import Radium from 'radium'
 import { container, FIXED_NAV_HEIGHT } from 'lib/styles'
 import { start } from './styles'
 
-export const Start: React.FC = () => (
+const StartSection: React.FC = () => (
     <section style={start.start}>
         <Element name={'start'} />
         <div style={container}>
@@ -42,3 +43,5 @@ export const Start: React.FC = () => (
         </div>
     </section>
 )
+
+export const Start = Radium(StartSection)

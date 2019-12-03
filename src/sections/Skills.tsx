@@ -2,10 +2,11 @@ import React from 'react'
 import { Skill, SkillGroup } from 'components'
 import { bracketsIcon, storageIcon, webIcon } from 'assets'
 import { Element } from 'react-scroll'
+import Radium from 'radium'
 import { container } from 'lib/styles'
 import { skills } from './styles'
 
-export const Skills: React.FC = () => (
+const SkillsSection: React.FC = () => (
     <section style={container}>
         <Element name={'skills'}/>
         <div style={skills.skills}>
@@ -24,3 +25,5 @@ export const Skills: React.FC = () => (
         </div>
     </section>
 )
+
+export const Skills = Radium(SkillsSection)

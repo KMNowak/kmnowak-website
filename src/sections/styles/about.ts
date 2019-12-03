@@ -1,7 +1,8 @@
 import { createStyle } from 'lib/utils'
-import { COLORS, selectNone, shadowLight } from 'lib/styles'
+import { COLORS, selectNone, shadowLight, Media } from 'lib/styles'
 
 export const about = createStyle({
+    minHeight: '300px',
     zIndex: 1,
     ...shadowLight
 })
@@ -12,7 +13,6 @@ export const aboutContent = createStyle({
     flexDirection: 'row',
     justifyContent: 'center',
     paddingTop: '60px',
-    height: '300px',
     width: '100%'
 })
 
@@ -26,6 +26,10 @@ export const aboutText = createStyle({
 export const aboutPhoto = createStyle({
     height: '200px',
     margin: '20px',
+    objectFit: 'contain',
     ...selectNone,
-    ...shadowLight
+    ...shadowLight,
+    [Media.phone]: {
+        height: '150px',
+    }
 })

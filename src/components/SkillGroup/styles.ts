@@ -1,7 +1,13 @@
 import { createStyle } from 'lib/utils'
-import { shadowLight, COLORS } from 'lib/styles'
+import { shadowLight, COLORS, Media } from 'lib/styles'
 
 export const skillGroup = createStyle({
+    [Media.tablet]: {
+        margin: '30px'
+    },
+    [Media.desktop]: {
+        margin: '30px'
+    },
     alignItems: 'center',
     borderRadius: '5px',
     display: 'flex',
@@ -9,7 +15,7 @@ export const skillGroup = createStyle({
     justifyContent: 'flex-start',
     padding: '40px 30px 15px 30px',
     position: 'relative',
-    margin:'30px',
+    margin: '30px 5px',
     width: '400px',
     ...shadowLight
 })

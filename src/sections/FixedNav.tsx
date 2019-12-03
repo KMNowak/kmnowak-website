@@ -1,9 +1,10 @@
 import React from 'react'
+import Radium from 'radium'
 import { Link } from 'react-scroll'
 import { container, FIXED_NAV_HEIGHT } from 'lib/styles'
 import { fixedNav } from './styles'
 
-export const FixedNav: React.FC = () => (
+const Nav: React.FC = () => (
     <header>
         <nav>
             <div style={fixedNav.fixedNav}>
@@ -75,3 +76,5 @@ export const FixedNav: React.FC = () => (
         </nav>
     </header>
 )
+
+export const FixedNav = Radium(Nav)

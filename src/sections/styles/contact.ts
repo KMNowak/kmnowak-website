@@ -1,5 +1,5 @@
 import { createStyle } from 'lib/utils'
-import { COLORS, selectNone, shadowLight } from 'lib/styles'
+import { COLORS, Media} from 'lib/styles'
 
 export const contact = createStyle({
     alignItems: 'center',
@@ -16,6 +16,9 @@ export const email = createStyle({
     color: COLORS.WHITE,
     fontWeight: 'bold',
     fontSize: '35px',
-    marginTop: '40px'
+    marginTop: '40px',
+    [Media.phone]: {
+        fontSize: '27px'
+    },
 })
 

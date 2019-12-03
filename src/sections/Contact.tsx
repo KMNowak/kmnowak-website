@@ -1,9 +1,10 @@
 import React from 'react'
+import Radium from 'radium'
 import { Element } from 'react-scroll'
 import { COLORS, invisible } from 'lib/styles'
 import { contact } from './styles'
 
-export const Contact: React.FC = () => (
+const ContactSection: React.FC = () => (
     <section style={contact.contact}>
         <Element name={'contact'} />
         <h2 style={invisible}>Contact</h2>
@@ -15,3 +16,5 @@ export const Contact: React.FC = () => (
         </h3>
     </section>
 )
+
+export const Contact = Radium(ContactSection)
