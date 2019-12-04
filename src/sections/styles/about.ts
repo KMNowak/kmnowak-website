@@ -13,12 +13,15 @@ export const aboutContent = createStyle({
     flexDirection: 'row',
     justifyContent: 'center',
     paddingTop: '60px',
-    width: '100%'
+    width: '100%',
+    [Media.phone]: {
+        flexDirection: 'column-reverse',
+    }
 })
 
 export const aboutText = createStyle({
     color: COLORS.TYPOGRPHY,
-    fontSize: '14px',
+    textJustify: 'inter-word',
     padding: '20px',
     ...selectNone
 })

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import 'react-vertical-timeline-component/style.min.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { przLogo, skanerkaLogo, labmanLogo } from 'assets'
@@ -9,7 +9,8 @@ import { experience } from './styles'
 type ExperienceElementProps = {
     title: string,
     company: string,
-    content: string
+    address: string,
+    content: ReactNode
 }
 
 const PrzLogo = () => (
@@ -30,14 +31,46 @@ const LambanLogo = () => (
     </div>
 )
 
-const ExperienceElement: React.FC<ExperienceElementProps> = ({ content, title, company }) => (
+const ExperienceElement: React.FC<ExperienceElementProps> = ({ content, title, company, address }) => (
     <div>
         <h3>{title}</h3>
-        <h4>{company}</h4>
-        <p>
-            {content}
-        </p>
+        <h4 style={{ margin: '5px' }}>{company}</h4>
+        <h4 style={{ margin: '5px', fontSize: '12px' }}>{address}</h4>
+        {content}
     </div>
+)
+
+const SkanerkaExperience = () => (
+    <ol style={{ listStyleType: 'initial', fontSize: '14px' }}>
+        <li>actively anticipated in creation of new mobile applications back-end software architecture and features</li>
+        <li>designed CMS for developed products</li>
+        <li>created multiple secure and scalable, monolith and serverless, REST and GraphQL APIs in NodeJS</li>
+        <li>applied unit, e2e, performance, load and QA tests with use of Jest, Docker and JMeter</li>
+        <li>designed and maintained MySQL and NoSQL DBs</li>
+        <li>implemented best practices and clean code</li>
+        <li>provided thorough code reviews, introduced new tech stack solutions, gave lectures to less experienced team members</li>
+    </ol>
+)
+
+const RoTExperience = () => (
+    <div>
+        <p style={{ fontSize: '14px'}}> Dissertation subject: <i>Algorithm measuring liquid dispersion with use of vision system</i>.</p>
+        <p style={{ fontSize: '14px'}}>Thesis created in cooperation with Labman Automation LTD</p>
+    </div>
+)
+const Labman2Experience = () => (
+    <ol style={{ listStyleType: 'initial', fontSize: '14px' }}>
+        <li>developed laboratory robots software</li>
+        <li>implemented mentioned in master thesis vision algorithm to upgraded version of TIDAS robot</li>
+        <li>provided tech support for British clients</li>
+    </ol>
+)
+const Labman1Experience = () => (
+    <ol style={{ listStyleType: 'initial', fontSize: '14px' }}>
+        <li>developed laboratory robots software and interfaces</li>
+        <li>designing and developing software for processes automation</li>
+        <li>actively cooperating with international team</li>
+    </ol>
 )
 
 export const Experience: React.FC = () => (
@@ -53,9 +86,10 @@ export const Experience: React.FC = () => (
                 date={'07.2017 - present'}
             >
                 <ExperienceElement
-                    title={"JavaScript developer"}
-                    company={"Skanerka sp. z o.o."}
-                    content={"What I did..."}
+                    title={'JavaScript developer'}
+                    company={'Skanerka sp. z o.o.'}
+                    address={'Rzeszow, Poland'}
+                    content={<SkanerkaExperience />}
                 />
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -63,22 +97,41 @@ export const Experience: React.FC = () => (
                 contentArrowStyle={experience.experienceItemArrow}
                 iconStyle={experience.experienceIcon}
                 icon={<PrzLogo />}
+                date={'07.2017'}
             >
                 <ExperienceElement
-                    title={"Graduated M.Sc."}
-                    company={"Rzeszow University of Technology"}
-                    content={"Write donw what i Was doing there"}
+                    title={'Graduated M.Sc. Computer Science'}
+                    company={'Rzeszow University of Technology'}
+                    address={'Rzeszow, Poland'}
+                    content={<RoTExperience/>}
                 />
-            </VerticalTimelineElement> <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
                 contentStyle={experience.experienceItemContent}
                 contentArrowStyle={experience.experienceItemArrow}
                 iconStyle={experience.experienceIcon}
                 icon={<LambanLogo />}
+                date={'07-10.2016'}
             >
                 <ExperienceElement
-                    title={"Software developer"}
-                    company={"Labman LTD"}
-                    content={"Faculty: Computer Science"}
+                    title={'Software developer'}
+                    company={'Labman LTD'}
+                    address={'Seamer, United Kingdom'}
+                    content={<Labman2Experience/>}
+                />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                contentStyle={experience.experienceItemContent}
+                contentArrowStyle={experience.experienceItemArrow}
+                iconStyle={experience.experienceIcon}
+                icon={<LambanLogo />}
+                date={'07-10.2015'}
+            >
+                <ExperienceElement
+                    title={'Summer placement'}
+                    company={'Labman LTD'}
+                    address={'Seamer, United Kingdom'}
+                    content={<Labman1Experience/>}
                 />
             </VerticalTimelineElement>
         </VerticalTimeline>

@@ -9,11 +9,11 @@ const App: React.FC = () => {
         <div>
             <Helmet>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta name="description" content="" />
+                <meta name="description" content="Krzysztof Nowak @kmnowak JavaScript developer specialising in writing highly scalable APIs and ReactNative mobile apps. TypeScript, MySQL, NestJS, ReactNative, React, Redux" />
                 <meta name="viewport"
                       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-                <meta name="Keywords" content="kmnowak, nodejs, developer, webdeveloper, react, reactnative" />
-                <title>kmnowak - NodeJS developer</title>
+                <meta name="Keywords" content="kmnowak, javascript, developer, nodejs, reactnative, react" />
+                <title>kmnowak - JavaScript developer</title>
             </Helmet>
             <FixedNav />
             <Start />
