@@ -29,19 +29,19 @@ export const textSkillLvl = createStyle({
 })
 export const progressBarSection = createStyle({
     display: 'block',
-    height: '18px',
+    height: '14px',
     width: '100%'
 })
 export const progressBarBar = createStyle({
     backgroundColor: COLORS.GRAY_LIGHT,
-    borderRadius: '18px',
-    height: '18px',
+    borderRadius: '14px',
+    height: '14px',
     width: '100%'
 })
 export const progressBarFill= (fillPercent: number) => createStyle({
     backgroundColor: COLORS.PRIMARY,
-    borderRadius: '18px',
-    height: '18px',
+    borderRadius: '14px',
+    height: '14px',
     zIndex: 5,
     width: `${fillPercent}%`
 })

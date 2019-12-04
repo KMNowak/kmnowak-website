@@ -13,7 +13,7 @@ const StartSection: React.FC = () => (
                     Krzysztof Nowak
                 </h1>
                 <h2 style={start.startSoftDev}>
-                    software developer
+                    JavaScript developer
                 </h2>
                 <div style={start.startButtonsDiv}>
                     <Link
