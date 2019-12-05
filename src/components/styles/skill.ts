@@ -1,5 +1,5 @@
 import { createStyle } from 'lib/utils'
-import { shadowLight, COLORS } from 'lib/styles'
+import { shadowLight, COLORS, Media } from 'lib/styles'
 
 export const skill = createStyle({
     ...shadowLight,
@@ -21,11 +21,17 @@ export const textSection = createStyle({
     width: '100%'
 })
 export const textSkillName = createStyle({
-    fontSize: '14px'
+    fontSize: '18px',
+    [Media.phone]: {
+        fontSize: '14px'
+    }
 })
 export const textSkillLvl = createStyle({
     fontStyle: 'italic',
-    fontSize: '14px'
+    fontSize: '16px',
+    [Media.phone]: {
+        fontSize: '14px'
+    }
 })
 export const progressBarSection = createStyle({
     display: 'block',

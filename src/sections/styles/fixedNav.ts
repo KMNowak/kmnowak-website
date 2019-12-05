@@ -32,8 +32,7 @@ export const fixedNavList = createStyle({
 export const fixedNavItem = createStyle({
     color: COLORS.TYPOGRPHY,
     cursor: 'pointer',
-    fontSize: '20px',
+    fontSize: '18px',
     fontWeight: 400,
-
     padding: '10px'
 })

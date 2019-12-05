@@ -30,7 +30,7 @@ const Nav: React.FC = () => (
                                 offset={-FIXED_NAV_HEIGHT}
                             >
                                 <div style={fixedNav.fixedNavItem}>
-                                    Start
+                                    start
                                 </div>
                             </Link>
                             <Link
@@ -39,7 +39,7 @@ const Nav: React.FC = () => (
                                 offset={-FIXED_NAV_HEIGHT}
                             >
                                 <div style={fixedNav.fixedNavItem}>
-                                    About
+                                    about
                                 </div>
                             </Link>
                             <Link
@@ -48,7 +48,7 @@ const Nav: React.FC = () => (
                                 offset={-FIXED_NAV_HEIGHT}
                             >
                                 <div style={fixedNav.fixedNavItem}>
-                                    Experience
+                                    experience
                                 </div>
                             </Link>
                             <Link
@@ -57,7 +57,7 @@ const Nav: React.FC = () => (
                                 offset={-FIXED_NAV_HEIGHT}
                             >
                                 <div style={fixedNav.fixedNavItem}>
-                                    Skills
+                                    skills
                                 </div>
                             </Link>
                             <Link
@@ -66,7 +66,7 @@ const Nav: React.FC = () => (
                                 offset={-FIXED_NAV_HEIGHT}
                             >
                                 <div style={fixedNav.fixedNavItem}>
-                                    Contact
+                                    contact
                                 </div>
                             </Link>
                         </div>

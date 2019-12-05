@@ -1,6 +1,6 @@
 import React from 'react'
 import { Skill, SkillGroup } from 'components'
-import { bracketsIcon, storageIcon, webIcon } from 'assets'
+import { bracketsIcon, storageIcon, webIcon, toolsLogo } from 'assets'
 import { Element } from 'react-scroll'
 import Radium from 'radium'
 import { container } from 'lib/styles'
@@ -30,11 +30,11 @@ const SkillsSection: React.FC = () => (
                 <Skill fillPercent={52} skillLvl={'Familiar'} skillName={'Redis'} />
                 <Skill fillPercent={66} skillLvl={'Intermediate'} skillName={'DynamoDB'} />
             </SkillGroup>
-            <SkillGroup name={'Others'} image={webIcon} imgWidth={35} imgHeight={30}>
+            <SkillGroup name={'Others'} image={toolsLogo} imgWidth={35} imgHeight={30}>
                 <Skill fillPercent={50} skillLvl={'Familiar'} skillName={'AWS'} />
                 <Skill fillPercent={67} skillLvl={'Intermediate'} skillName={'git'} />
                 <Skill fillPercent={55} skillLvl={'Familiar'} skillName={'webpack'} />
-                <Skill fillPercent={52} skillLvl={'Familiar'} skillName={'yarn/npm'} />
+                <Skill fillPercent={67} skillLvl={'Intermediate'} skillName={'testing'} />
             </SkillGroup>
         </div>
     </section>

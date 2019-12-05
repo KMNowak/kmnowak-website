@@ -6,6 +6,7 @@ const facePhoto = require('./face-photo.png')
 const bracketsIcon = require('./skillGroupIcons/brackets.png')
 const storageIcon = require('./skillGroupIcons/storage.png')
 const webIcon = require('./skillGroupIcons/web.png')
+const toolsLogo = require('./skillGroupIcons/tools.png')
 
 const przLogo = require('./prz-logo.png')
 const skanerkaLogo = require('./skanerka-logo.png')
@@ -21,5 +22,6 @@ export {
     webIcon,
     przLogo,
     skanerkaLogo,
-    labmanLogo
+    labmanLogo,
+    toolsLogo
 }

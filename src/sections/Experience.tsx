@@ -41,8 +41,8 @@ const ExperienceElement: React.FC<ExperienceElementProps> = ({ content, title, c
 )
 
 const SkanerkaExperience = () => (
-    <ol style={{ listStyleType: 'initial', fontSize: '14px' }}>
-        <li>actively anticipated in creation of new mobile applications back-end software architecture and features</li>
+    <ol style={{ listStyleType: 'initial', fontSize: '16px', lineHeight: '23px' }}>
+        <li>actively participated in creation of new mobile applications back-end software architecture and features</li>
         <li>designed CMS for developed products</li>
         <li>created multiple secure and scalable, monolith and serverless, REST and GraphQL APIs in NodeJS</li>
         <li>applied unit, e2e, performance, load and QA tests with use of Jest, Docker and JMeter</li>
@@ -54,19 +54,19 @@ const SkanerkaExperience = () => (
 
 const RoTExperience = () => (
     <div>
-        <p style={{ fontSize: '14px'}}> Dissertation subject: <i>Algorithm measuring liquid dispersion with use of vision system</i>.</p>
-        <p style={{ fontSize: '14px'}}>Thesis created in cooperation with Labman Automation LTD</p>
+        <p style={{ fontSize: '16px'}}> Dissertation subject: <i>Algorithm measuring liquid dispersion with use of vision system</i>.</p>
+        <p style={{ fontSize: '16px'}}>Thesis created in cooperation with Labman Automation LTD</p>
     </div>
 )
 const Labman2Experience = () => (
-    <ol style={{ listStyleType: 'initial', fontSize: '14px' }}>
+    <ol style={{ listStyleType: 'initial', fontSize: '16px', lineHeight: '23px' }}>
         <li>developed laboratory robots software</li>
         <li>implemented mentioned in master thesis vision algorithm to upgraded version of TIDAS robot</li>
         <li>provided tech support for British clients</li>
     </ol>
 )
 const Labman1Experience = () => (
-    <ol style={{ listStyleType: 'initial', fontSize: '14px' }}>
+    <ol style={{ listStyleType: 'initial', fontSize: '16px', lineHeight: '23px' }}>
         <li>developed laboratory robots software and interfaces</li>
         <li>designing and developing software for processes automation</li>
         <li>actively cooperating with international team</li>
