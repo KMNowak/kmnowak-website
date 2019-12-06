@@ -8,11 +8,15 @@ const App: React.FC = () => {
     return (
         <div>
             <Helmet>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta name="description" content="Krzysztof Nowak @kmnowak JavaScript developer specialising in writing highly scalable APIs and ReactNative mobile apps. TypeScript, MySQL, NestJS, ReactNative, React, Redux" />
                 <meta name="viewport"
                       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-                <meta name="Keywords" content="kmnowak, javascript, developer, nodejs, reactnative, react" />
+                <meta name="Keywords" content="kmnowak, Krzysztof Nowak, javascript, webdeveloper, nodejs, ReactNative, React" />
+                <title>kmnowak - JavaScript developer</title>
+                <link rel="icon" href="./public/favicon.ico" />
+                <meta name="theme-color" content="#000000" />
+                <link rel="apple-touch-icon" href="./public/icon-152.png" />
+                <link rel="manifest" href="./public/manifest.json" />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 <title>kmnowak - JavaScript developer</title>
             </Helmet>
             <FixedNav />
