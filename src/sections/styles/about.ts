@@ -30,9 +30,11 @@ export const aboutPhoto = createStyle({
     height: '200px',
     margin: '20px',
     objectFit: 'contain',
+    borderRadius: '100px',
     ...selectNone,
     ...shadowLight,
     [Media.phone]: {
         height: '150px',
+        borderRadius: '75px'
     }
 })

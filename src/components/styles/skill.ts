@@ -21,7 +21,7 @@ export const textSection = createStyle({
     width: '100%'
 })
 export const textSkillName = createStyle({
-    fontSize: '18px',
+    fontSize: '19px',
     [Media.phone]: {
         fontSize: '14px'
     }
@@ -35,19 +35,19 @@ export const textSkillLvl = createStyle({
 })
 export const progressBarSection = createStyle({
     display: 'block',
-    height: '14px',
+    height: '13px',
     width: '100%'
 })
 export const progressBarBar = createStyle({
     backgroundColor: COLORS.GRAY_LIGHT,
-    borderRadius: '14px',
-    height: '14px',
+    borderRadius: '13px',
+    height: '13px',
     width: '100%'
 })
 export const progressBarFill= (fillPercent: number) => createStyle({
     backgroundColor: COLORS.PRIMARY,
-    borderRadius: '14px',
-    height: '14px',
+    borderRadius: '13px',
+    height: '13px',
     zIndex: 5,
     width: `${fillPercent}%`
 })

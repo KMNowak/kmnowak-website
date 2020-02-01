@@ -32,7 +32,7 @@ const FooterSection: React.FC = () => (
                     </a>
                 </div>
                 <div style={footer.footerText}>
-                    Copyright Krzysztof Nowak 2019<br />
+                    Copyright Krzysztof Nowak 2020<br />
                     All rights reserved
                 </div>
             </div>

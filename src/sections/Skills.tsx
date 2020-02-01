@@ -11,15 +11,15 @@ const SkillsSection: React.FC = () => (
         <Element name={'skills'}/>
         <div style={skills.skills}>
             <SkillGroup name={'Programming'} image={bracketsIcon} imgWidth={35} imgHeight={45}>
-                <Skill fillPercent={88} skillLvl={'Advanced'} skillName={'JavaScript'} />
-                <Skill fillPercent={70} skillLvl={'Intermediate'} skillName={'TypeScript'} />
+                <Skill fillPercent={78} skillLvl={'Advanced'} skillName={'JavaScript'} />
+                <Skill fillPercent={68} skillLvl={'Intermediate'} skillName={'TypeScript'} />
                 <Skill fillPercent={60} skillLvl={'Intermediate'} skillName={'NodeJS'} />
                 <Skill fillPercent={62} skillLvl={'Intermediate'} skillName={'MySQL 5.6'} />
                 <Skill fillPercent={52} skillLvl={'Familiar'} skillName={'HTML/CSS'} />
             </SkillGroup>
             <SkillGroup name={'Frameworks'} image={webIcon} imgWidth={35} imgHeight={30}>
-                <Skill fillPercent={88} skillLvl={'Advanced'} skillName={'NestJS'} />
-                <Skill fillPercent={70} skillLvl={'Intermediate'} skillName={'express.js'} />
+                <Skill fillPercent={75} skillLvl={'Advanced'} skillName={'NestJS'} />
+                <Skill fillPercent={65} skillLvl={'Intermediate'} skillName={'express.js'} />
                 <Skill fillPercent={63} skillLvl={'Intermediate'} skillName={'Serverless'} />
                 <Skill fillPercent={52} skillLvl={'Familiar'} skillName={'ReactNative'} />
                 <Skill fillPercent={54} skillLvl={'Familiar'} skillName={'React/Redux'} />

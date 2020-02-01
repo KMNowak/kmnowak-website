@@ -115,7 +115,7 @@ export const Experience: React.FC = () => (
             >
                 <ExperienceElement
                     title={'Software developer'}
-                    company={'Labman LTD'}
+                    company={'Labman Automation LTD'}
                     address={'Seamer, United Kingdom'}
                     content={<Labman2Experience/>}
                 />
@@ -129,7 +129,7 @@ export const Experience: React.FC = () => (
             >
                 <ExperienceElement
                     title={'Summer placement'}
-                    company={'Labman LTD'}
+                    company={'Labman Automation LTD'}
                     address={'Seamer, United Kingdom'}
                     content={<Labman1Experience/>}
                 />

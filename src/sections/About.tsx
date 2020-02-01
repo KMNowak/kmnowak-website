@@ -12,12 +12,12 @@ const AboutSection: React.FC = () => (
             <h2 style={invisible}>About</h2>
             <div style={about.aboutContent}>
                 <h4 style={about.aboutText}>
-                    Developer in love with JavaScript, NodeJS and NestJS.
+                    Developer in love with TypeScript, NodeJS and NestJS.
                     Cheating on them after hours with React Native. Provider of scalable,
                     secure and reliable solutions. Experienced in building apps from scratch.
                     <br/>
                     <br/>
-                    Responsible, highly communicative and usually smiled (do not let the photo deceive you).
+                    Responsible, highly communicative, respectful teamplayer, but who knows it's business first.
                 </h4>
                 <div style={about.aboutPhoto}>
                     <img src={facePhoto} alt="Krzysztof Nowak photo" height="100%" />
