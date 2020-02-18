@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import 'react-vertical-timeline-component/style.min.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { przLogo, skanerkaLogo, labmanLogo } from 'assets'
+import { przLogo, skanerkaLogo, labmanLogo, boldareLogo } from 'assets'
 import { Element } from 'react-scroll'
 import { invisible } from 'lib/styles'
 import { experience } from './styles'
@@ -22,6 +22,12 @@ const PrzLogo = () => (
 const SkanerkaLogo = () => (
     <div style={experience.img}>
         <img src={skanerkaLogo} alt={'Skanerka logo'} style={experience.img} />
+    </div>
+)
+
+const BoldareLogo = () => (
+    <div style={experience.img}>
+        <img src={boldareLogo} alt={'Boldare logo'} style={experience.img} />
     </div>
 )
 
@@ -82,8 +88,22 @@ export const Experience: React.FC = () => (
                 contentStyle={experience.experienceItemContent}
                 contentArrowStyle={experience.experienceItemArrow}
                 iconStyle={experience.experienceIcon}
+                icon={<BoldareLogo />}
+                date={'02.2020 - Present'}
+            >
+                <ExperienceElement
+                    title={'JavaScript developer'}
+                    company={'Boldare'}
+                    address={'Gliwice, Poland'}
+                    content={null}
+                />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                contentStyle={experience.experienceItemContent}
+                contentArrowStyle={experience.experienceItemArrow}
+                iconStyle={experience.experienceIcon}
                 icon={<SkanerkaLogo />}
-                date={'07.2017 - present'}
+                date={'07.2017 - 02.2020'}
             >
                 <ExperienceElement
                     title={'JavaScript developer'}

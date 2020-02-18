@@ -11,6 +11,7 @@ const toolsLogo = require('./skillGroupIcons/tools.png')
 const przLogo = require('./prz-logo.png')
 const skanerkaLogo = require('./skanerka-logo.png')
 const labmanLogo = require('./labman-logo.png')
+const boldareLogo = require('./boldare.jpg')
 
 export {
     linkedInIcon,
@@ -23,5 +24,6 @@ export {
     przLogo,
     skanerkaLogo,
     labmanLogo,
-    toolsLogo
+    toolsLogo,
+    boldareLogo
 }
